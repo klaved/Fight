@@ -27,7 +27,7 @@ int main()
     int timer = 0;
     RenderWindow window(VideoMode(1800, 900), "Fight");
     MainMenu MainMenu;
-                window.draw(backround_S);
+    window.draw(backround_S);
     while (window.isOpen())
     {
         Event event;
