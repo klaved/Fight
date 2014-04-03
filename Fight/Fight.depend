@@ -11,3 +11,15 @@
 1389893491 source:c:\users\hmahar2675\desktop\fight\fight\mainmenu.cpp
 	"MainMenu.h"
 
+1396369485 source:c:\users\hmahar2675\documents\github\fight\fight\main.cpp
+	<SFML/Graphics.hpp>
+	"MainMenu.h"
+	<string>
+
+1391105725 c:\users\hmahar2675\documents\github\fight\fight\mainmenu.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1389893491 source:c:\users\hmahar2675\documents\github\fight\fight\mainmenu.cpp
+	"MainMenu.h"
+

@@ -52,6 +52,7 @@ public:
         Texture Charselect_backround;
         Sprite Charselect_backround_S;
         Charselect();
+        void ONmouseClick(Vector2f);
 };
 Charselect::Charselect()
 {
@@ -75,6 +76,13 @@ Charselect::Charselect()
     Charselect_backround_S.setTexture(Charselect_backround);
 
 }
+
+void ONmouseClick (Vector2i mouseposition)
+{
+    mouseposition
+
+}
+
 int main()
 {
     bool INmainmenu = true;
@@ -93,9 +101,20 @@ int main()
                     {
                         if (event.mouseButton.button == sf::Mouse::Right)
                             {
-                                INmainmenu = false;
-                                INcharselect = true;
+                                if(INmainmenu = true)
+                                {
+                                    INmainmenu = false;
+                                    INcharselect = true;
+                                }
                             }
+                        if (event.mouseButton.button == sf::Mouse::Left)
+                        {
+                            if(INcharselect)
+                            {
+                                Vector2i mousePosition = sf::Mouse::getPosition(window);
+                                myCharselect.ONmouseClick(mousePosition);
+                            }
+                        }
                     }
             if (event.type == Event::Closed)
                 window.close();
@@ -130,6 +149,7 @@ int main()
             window.draw(myCharselect.watertabBlue_S);
             window.draw(myCharselect.windtabBlue_S);
             window.draw(myCharselect.earthtabBlue_S);
+
         }
 
 
